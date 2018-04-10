@@ -46,7 +46,7 @@ class SortDemoTest {
      * NonIntegerValue checks that the correct exception is thrown when a non integer value is given
      */
     @Test
-    public void NonIntegerValue() {
+    public void nonIntegerValue() {
         assertThrows(NumberFormatException.class,
                 ()->{
                     data.initializeArray("5.5 7 9");
@@ -57,7 +57,7 @@ class SortDemoTest {
      * NoSuchElem checks that the correct exception is thrown for an empty array
      */
     @Test
-    public void NoSuchElem() {
+    public void noSuchElem() {
         assertThrows(java.util.NoSuchElementException.class,
                 ()->{
                     data.initializeArray("");
@@ -68,7 +68,7 @@ class SortDemoTest {
      * NoNumber checks that the correct exception is thrown if a character is given
      */
     @Test
-    public void NoNumber() {
+    public void noNumber() {
         assertThrows(NumberFormatException.class,
                 ()->{
                     data.initializeArray("5 8 y 4"); 
@@ -80,7 +80,7 @@ class SortDemoTest {
      * SameNumber checks that duplicate numbers are removed
      */
     @Test
-    public void SameNumber() {
+    public void sameNumber() {
          data.initializeArray("5 5 64 4 4");  
         
          SortDemoData data2 = new SortDemoData();
